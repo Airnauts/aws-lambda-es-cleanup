@@ -109,7 +109,7 @@ class ES_Cleanup(object):
 
             req = AWSRequest(
                 method=method,
-                url="https://{}{}".format(
+                url="{}{}".format(
                     self.cfg["es_endpoint"], quote(path)),
                 data=json.dumps(payload),
                 params={"format": "json"},
